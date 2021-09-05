@@ -5,8 +5,15 @@ namespace Library
 {
     public class AppointmentService
     {
+        /*Este metodo contiene todas las instrucciones que realiza la clase, como propiamente la letra del ejercicio dice
+        hay muchas razones por las cuales la consulta puede cambiar, porque se le puede agregar algun dato del paciente, 
+        porque puede cambiar la forma de agendarse o porque puede que algo más cambie.
+        Por esta razon no es practico tener todo en una misma clase, deberia aplicar el principio SRC y agregar 1 o 2 clases más,
+        de forma tal que las responsabilidades queden divididas. Y a la hora de modificar algo sea más facil hacerle mantenimiento.*/
+
         public static string CreateAppointment(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName)
         {
+            
             StringBuilder stringBuilder = new StringBuilder("Scheduling appointment...\n");
             Boolean isValid = true;
 
