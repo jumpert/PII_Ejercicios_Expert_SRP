@@ -17,7 +17,7 @@ namespace SRP
             this.Codigo = codigo;
         }
 
-        public void LibroCaracteristicas()
+        public void LibroCaracteristicas()      //Permite acceder a las caracteristicas de cada libro (titulo, autor y Codigo)
         {
             Console.WriteLine($"El título del libro es {this.Titulo}, fue escrito por {this.Autor}.");
         }
